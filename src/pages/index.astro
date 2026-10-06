@@ -1,0 +1,31 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import HeroSection from '@/components/HeroSection.astro';
+import PorscheSection from '@/components/PorscheSection.astro';
+import HeritageStrip from '@/components/HeritageStrip.astro';
+import FerrariSection from '@/components/FerrariSection.astro';
+import LamborghiniSection from '@/components/LamborghiniSection.astro';
+import ComparisonSection from '@/components/ComparisonSection.astro';
+---
+
+<Layout title="MARQUE // Archival Automotive Journal">
+  <div class="flex flex-col w-full text-on-surface bg-surface selection:bg-primary selection:text-surface">
+    <!-- Hero Section: Three Philosophies of Speed -->
+    <HeroSection />
+
+    <!-- Porsche Section: German Engineering Discipline -->
+    <PorscheSection />
+
+    <!-- Heritage Strip: Comparative Historical Ledger (1948-1970) -->
+    <HeritageStrip />
+
+    <!-- Ferrari Section: Scuderia Motorsport Lineage -->
+    <FerrariSection />
+
+    <!-- Lamborghini Section: Bolognese Radicalism -->
+    <LamborghiniSection />
+
+    <!-- Comparison Section: Flagship Telemetry Matrix -->
+    <ComparisonSection />
+  </div>
+</Layout>

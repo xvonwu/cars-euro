@@ -1,0 +1,262 @@
+---
+import { Card } from "@/components/ui/card";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+---
+
+<!-- PORSCHE SECTION -->
+<section class="w-full border-b border-outline-variant bg-surface scroll-mt-16" id="porsche">
+  <div class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-space-xl">
+    <!-- Section Header -->
+    <div class="mb-space-lg">
+      <div class="flex items-center gap-3">
+        <span class="w-2.5 h-2.5 bg-[#B8BCC2]"></span>
+        <span class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase tracking-widest">
+          CHAPTER 01 // GERMAN ENGINEERING DISCIPLINE
+        </span>
+      </div>
+      <h2 class="font-headline-xl text-headline-xl uppercase text-primary tracking-tight mt-1">
+        PORSCHE
+      </h2>
+      <div class="w-full h-px bg-[#B8BCC2] mt-3 mb-4"></div>
+      <div class="flex flex-wrap items-center justify-between text-outline font-label-mono-sm text-label-mono-sm uppercase tracking-wider gap-2">
+        <span>Stuttgart, Germany</span>
+        <span>Founded 1931</span>
+        <span>Philosophy: Functional Purity &amp; Relentless Usability</span>
+      </div>
+    </div>
+
+    <!-- Hero Photograph -->
+    <div class="w-full border border-outline-variant relative bg-surface-container-lowest overflow-hidden mb-space-xl">
+      <div class="relative w-full h-[440px] md:h-[680px]">
+        <img
+          alt="Porsche 911 Turbo S traversing wet curve on test circuit"
+          class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkara_gG42dZNSFpA6vNnvgwvZWdbtvYksq0BMLffhXsmxdWxosjwCPbMtMAn8Rp_P5kwOP3Zsqas923LGOwIqQCSlP50gdjUhrUQuruuu2FN3uND45RW9LE1_7lrndoliFLjdBP6aX5TFpPu_KgHL4oOPqKVmXIZRiRrswjWA1S3NZ3FeUX5B4GyPDNCmJbcFnEpLBl1iyuprdMxS_Qu73x5OW2qbwOQDn-M48y-wVZNJxon-XD1exzjLRbjzvkh6Z1imGJrl-zLJ-A"
+        />
+        <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-surface-container-lowest/90 border-t border-outline-variant flex flex-col md:flex-row md:items-center justify-between gap-2">
+          <span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">
+            Plate P-01: 992.2 Turbo S // Track Calibration Run // Nürburgring Nordschleife
+          </span>
+          <span class="font-label-mono-sm text-label-mono-sm text-outline">
+            SHUTTER: 1/800s // F/4.0 // ISO 200 // 85MM
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Origin & Archival Ledger -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-space-xl">
+      <!-- Origin Text -->
+      <div class="lg:col-span-5 border-r-0 lg:border-r border-outline-variant pr-0 lg:pr-gutter flex flex-col justify-between">
+        <div>
+          <div class="flex items-center gap-2 mb-3">
+            <span class="w-2 h-2 bg-outline"></span>
+            <span class="font-label-mono-sm text-label-mono-sm uppercase text-outline tracking-wider">CHRONICLE ORIGIN</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md uppercase text-primary mb-4">
+            From Gmünd Sawmill to Global Benchmark
+          </h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+            Ferdinand Porsche opened an engineering and design office in Stuttgart in 1931, working on vehicles for other manufacturers. His son Ferry Porsche built the first car carrying the family name, the 356, in 1948. The rear-engined 911 arrived in 1963 and has remained the brand's centerpiece ever since.
+          </p>
+          <div class="p-4 bg-surface-container-low border border-outline-variant">
+            <span class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase block mb-1">
+              ARCHIVIST NOTE // REF #STU-356
+            </span>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Production began in an old converted sawmill in Gmünd, Austria, producing light aluminum coupés that prioritised mechanical efficiency over raw engine displacement.
+            </p>
+          </div>
+        </div>
+        <div class="pt-6 mt-6 border-t border-outline-variant">
+          <p class="font-headline-lg text-headline-lg text-[#B8BCC2] uppercase tracking-tight">"Intelligent performance."</p>
+          <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider block mt-1">
+            Ferry Porsche // Core Engineering Doctrine
+          </span>
+        </div>
+      </div>
+
+      <!-- Archival Image + Timeline Split -->
+      <div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+        <!-- Archival Image Card -->
+        <Card className="flex flex-col rounded-none">
+          <div class="p-2 border-b border-outline-variant font-label-mono-sm text-label-mono-sm text-outline uppercase">
+            ARCHIVE REF: GMÜND 1948
+          </div>
+          <div class="h-64 sm:h-72 overflow-hidden">
+            <img
+              alt="Porsche 356 No. 1 and Gmünd workshop, 1948"
+              class="w-full h-full object-cover grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcxPfZr-kx2ZVGMs9ohapPuYchaiJgm8gGxz6Tnf22xWPba85TOG27qq6-dgsKaXAc0F3nYN8hMusZWWKYbh43AQYXZXRBsEyn0rmQGTrn8rUEMArh6r3-jWO3fq6b_MBqsDCCJkw6kMEa2hJhgG0QkOh9G2UHT0KUZ0Q_npl0VOiVLhAvAQQGRUZj3HKzcbYpulZ78lIliEJZEV_8gXeqNd-ry3LOdGuTNN_GtXjZaqBkkWg9myPJ"
+            />
+          </div>
+          <div class="p-4 border-t border-outline-variant bg-surface-container-lowest flex-1">
+            <p class="font-body-sm text-body-sm text-on-surface">Porsche 356 No. 1 and Gmünd workshop, 1948.</p>
+            <p class="font-label-mono-sm text-label-mono-sm text-outline mt-2 uppercase">
+              Hand-formed aluminum body over steel tubular space-frame.
+            </p>
+          </div>
+        </Card>
+
+        <!-- Vertical Timeline Card -->
+        <Card className="p-6 flex flex-col justify-between rounded-none">
+          <div>
+            <div class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider pb-3 border-b border-outline-variant mb-4">
+              HISTORICAL LINEAGE // KEY CHASSIS
+            </div>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <span class="font-label-mono-md text-label-mono-md text-[#B8BCC2] font-mono shrink-0">1931</span>
+                <div>
+                  <h4 class="font-body-sm font-semibold text-primary">Stuttgart Office</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Design and advisory office founded in Kronenstraße, Stuttgart.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="font-label-mono-md text-label-mono-md text-[#B8BCC2] font-mono shrink-0">1948</span>
+                <div>
+                  <h4 class="font-body-sm font-semibold text-primary">356 'No. 1' Roadster</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">First car carrying the Porsche brand name receives Austrian road permit.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="font-label-mono-md text-label-mono-md text-[#B8BCC2] font-mono shrink-0">1963</span>
+                <div>
+                  <h4 class="font-body-sm font-semibold text-primary">Type 901 / 911</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">Air-cooled flat-six rear-engine layout introduced at Frankfurt IAA.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="font-label-mono-md text-label-mono-md text-[#B8BCC2] font-mono shrink-0">1970</span>
+                <div>
+                  <h4 class="font-body-sm font-semibold text-primary">Le Mans Victory</h4>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant">First overall 24 Hours of Le Mans victory with Hans Herrmann in the 917 KH.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-outline-variant font-label-mono-sm text-label-mono-sm text-outline mt-6">
+            CONTINUOUS MONOCOQUE EVOLUTION // 74 YEARS
+          </div>
+        </Card>
+      </div>
+    </div>
+
+    <!-- Flagship Spec Table & Overview -->
+    <div class="border border-outline-variant bg-surface-container-low p-6 md:p-8 mb-space-xl">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+        <div class="lg:col-span-5">
+          <span class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase tracking-wider block mb-1">
+            FLAGSHIP TECHNICAL DOSSIER
+          </span>
+          <h3 class="font-headline-xl text-headline-xl uppercase text-primary">911 TURBO S</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mt-4">
+            The everyday-usable supercar. Rear-engined, all-wheel drive, and built to be driven in any weather without drama.
+          </p>
+          <div class="mt-6 font-label-mono-sm text-label-mono-sm text-outline space-y-1">
+            <div>ASSEMBLY: ZUFFENHAUSEN, BADEN-WÜRTTEMBERG</div>
+            <div>HOMOLOGATION: FIA GT SPEC / EURO 6E</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead>PARAMETER</TableHead>
+                <TableHead className="text-right">MEASURED VALUE</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              <TableRow className="bg-surface hover:bg-surface-container">
+                <TableCell className="font-body-sm text-on-surface">Engine</TableCell>
+                <TableCell className="font-label-mono-md text-label-mono-md text-primary text-right font-mono">
+                  3.6L flat-six twin-turbo hybrid
+                </TableCell>
+              </TableRow>
+              <TableRow className="bg-surface hover:bg-surface-container">
+                <TableCell className="font-body-sm text-on-surface">Power</TableCell>
+                <TableCell className="font-label-mono-md text-label-mono-md text-primary text-right font-mono">
+                  711 PS
+                </TableCell>
+              </TableRow>
+              <TableRow className="bg-surface hover:bg-surface-container">
+                <TableCell className="font-body-sm text-on-surface">0-100 km/h</TableCell>
+                <TableCell className="font-label-mono-md text-label-mono-md text-primary text-right font-mono">
+                  2.5 s
+                </TableCell>
+              </TableRow>
+              <TableRow className="bg-surface hover:bg-surface-container">
+                <TableCell className="font-body-sm text-on-surface">Top speed</TableCell>
+                <TableCell className="font-label-mono-md text-label-mono-md text-primary text-right font-mono">
+                  322 km/h
+                </TableCell>
+              </TableRow>
+              <TableRow className="bg-surface hover:bg-surface-container">
+                <TableCell className="font-body-sm text-on-surface">Drive</TableCell>
+                <TableCell className="font-label-mono-md text-label-mono-md text-primary text-right font-mono">
+                  AWD, rear-mounted engine
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Strip (3 In Row) -->
+    <div>
+      <div class="flex items-center justify-between pb-3 mb-4 border-b border-outline-variant">
+        <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">
+          MECHANICAL PLATES // DETAIL INSPECTION
+        </span>
+        <span class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase">
+          3 ARCHIVAL APERTURES
+        </span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <Card className="bg-surface-container-lowest overflow-hidden group rounded-none">
+          <div class="h-64 overflow-hidden relative">
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              alt="Close up photograph of a Porsche flat six boxer engine assembly"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8pK-crmakDYv8zBbPPs4wnsP_PBvmJzIpwJ5SxKxNTpEONGgmTfmT098UTsl02uKxBOQcdX1k5vrWCz4woaC3DplmJk0lvizf8n1ZWNFeLBl0g85cs9vM2qB-h8MkBmccd7S7ZZvkBAXuTHDxHJGoOzDQ9ZH5_MCR7cpo0vDp1EHkyU_430_MEmPGH9PBxZ-Uddz2s-eG-0Ff-Qv07Z-c15M6rSoERp9Q_hxRCckWtr6zeglllXLl"
+            />
+          </div>
+          <div class="p-3 border-t border-outline-variant font-label-mono-sm text-label-mono-sm">
+            <span class="text-primary block uppercase">PL-01 // BOXER FLAT-SIX</span>
+            <span class="text-outline">Rear-axle mounted 3.6L twin-turbo hybrid architecture.</span>
+          </div>
+        </Card>
+
+        <Card className="bg-surface-container-lowest overflow-hidden group rounded-none">
+          <div class="h-64 overflow-hidden relative">
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              alt="Archival view of modern Porsche 911 driver cockpit"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4QJd06B0xoReM1wy2EKbv5NDE0FFW9cjUuIQc2RJfmwqTsdHnD8NIpmh95UFA110uI4zsOHQBIXR0dSm9JjGWR4zYsD5KatspYbBbJphM7NUWTBytYui4sFOgYLQnp9BNyRMqltG0b6lQkSCcIgntQZZDhSfDUjB3NLiM2A5flSbjvOPSQ--H2QD6_wy38GVBw9viUikRYxo8bF3AYb6OCjSipWP5JjLpN4jOc9fBxX5jyW-OPv3z"
+            />
+          </div>
+          <div class="p-3 border-t border-outline-variant font-label-mono-sm text-label-mono-sm">
+            <span class="text-primary block uppercase">PL-02 // COCKPIT ERGONOMICS</span>
+            <span class="text-outline">Driver instrumentation with central analog rev layout.</span>
+          </div>
+        </Card>
+
+        <Card className="bg-surface-container-lowest overflow-hidden group rounded-none">
+          <div class="h-64 overflow-hidden relative">
+            <img
+              class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              alt="Dynamic track action shot of silver Porsche 911 Turbo S cornering hard at apex"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkHGP2rzQ1iGIbrtHYCnXRxSH5A4HiN4E_FWYJsbqaCNxxdoekQtR7P9_5rX5ttb4Km2g843hGx4SqbVBRhTMJDxrBLY4Ou-URHW2SSRkY89_2FefDg51IPqvajXBab4DrrbEECitJQGToDY75HNl_m4KKqwOr8CM7UigrYLR5TbA7kREDf2YnesA7S26Ls97FmKXL1QFzl4vy_8R_0n-OERLCAphwZbCmiTfqwMFT4-otvQaZ0v4K"
+            />
+          </div>
+          <div class="p-3 border-t border-outline-variant font-label-mono-sm text-label-mono-sm">
+            <span class="text-primary block uppercase">PL-03 // DYNAMIC LATERAL LOAD</span>
+            <span class="text-outline">Active aero wing deployment during heavy deceleration.</span>
+          </div>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>

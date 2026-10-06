@@ -1,0 +1,102 @@
+---
+import { Badge } from "@/components/ui/badge";
+---
+
+<!-- HERO SECTION: THREE PHILOSOPHIES OF SPEED -->
+<section class="w-full relative border-b border-outline-variant bg-surface-container-lowest">
+  <!-- Top Ledger Strip -->
+  <div class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-3 border-b border-outline-variant flex items-center justify-between font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider">
+    <div class="flex items-center gap-space-sm">
+      <span class="w-1.5 h-1.5 bg-primary"></span>
+      <span>SPECIAL MONOGRAPH // ARCHIVE ISSUE 104</span>
+    </div>
+    <div class="hidden md:flex items-center gap-space-xl">
+      <span>LOCATIONS: STUTTGART / MARANELLO / SANT'AGATA</span>
+      <span>CHASSIS DOSSIER: ROAD & TRACK DISCIPLINE</span>
+    </div>
+    <div>
+      <span>INDEX REF: #TRI-SPEC-2025</span>
+    </div>
+  </div>
+
+  <!-- 3-Panel Hero Split -->
+  <div class="w-full grid grid-cols-1 md:grid-cols-3 min-h-[640px] lg:h-[780px] border-b border-outline-variant">
+    <!-- Porsche Panel -->
+    <a class="relative group block overflow-hidden border-b md:border-b-0 md:border-r border-outline-variant h-[380px] md:h-full" href="#porsche">
+      <img
+        alt="Porsche 911 Turbo S on Nürburgring track"
+        class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIDuHc493mNi1L55p8snrUpNrikGMLwmXx-W2Eh0VvoXPcv9y5SrS75fqgvyXasfP-33ezjHFQ8JsKZYaf_vJABgNzVHNA22CxjDYT_Qwb6FQVrW7VZLKuA8QVSk3JHDRhkDdZzfoHou07iCicn54WNviU3azxNnxF-W9F-V99akKmgkjyeI9l4ZPp4x2Wf77-9otPr87cN1jS1VbiO7EW2cD9P0CoZ7fsyWrSrkKJzvvL92Y1SBDs2Uv7jyPaNQA_kBCneOck-XSipQ"
+      />
+      <div class="absolute inset-0 bg-[#B8BCC2]/10 mix-blend-color pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+      <div class="absolute top-4 left-4 z-10">
+        <Badge variant="porsche" className="px-2 py-1">
+          01 // PORSCHE
+        </Badge>
+      </div>
+      <div class="absolute bottom-6 left-6 right-6 z-10">
+        <p class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase tracking-widest">STUTTGART-ZUFFENHAUSEN</p>
+        <h3 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">911 TURBO S</h3>
+        <p class="font-label-mono-sm text-label-mono-sm text-outline mt-1 font-mono">711 PS // 3.6L FLAT-6 TURBO HYBRID</p>
+      </div>
+    </a>
+
+    <!-- Ferrari Panel -->
+    <a class="relative group block overflow-hidden border-b md:border-b-0 md:border-r border-outline-variant h-[380px] md:h-full" href="#ferrari">
+      <img
+        alt="Ferrari F80 on Italian circuit at sunset"
+        class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbgPghSZ5F-9eoFU4ZCfUuCfk4rbME3-dN9iLR15zRd6zSJF0-gWb9gr8DxL7vrRysROQFmTYpeVCNY9JIdDel7BY4kqy4WfW5TKsNzlXDacSEsX8lR7wo82uY4mrYr6S2FcVidCFx3JVle5TCW5tRasTcWfMqAnZxmlskxpqQwJ9bV4xJRk72Wm-gnoSss5HEmCP9BJ7Az9LTj7aeo-8Q1P1sOl1-XhG_lywMj3Fgj0_Mem86sdkWSb4iDj84QYy-cwVkRof1So_h4w"
+      />
+      <div class="absolute inset-0 bg-[#D40000]/10 mix-blend-color pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+      <div class="absolute top-4 left-4 z-10">
+        <Badge variant="ferrari" className="px-2 py-1">
+          02 // FERRARI
+        </Badge>
+      </div>
+      <div class="absolute bottom-6 left-6 right-6 z-10">
+        <p class="font-label-mono-sm text-label-mono-sm text-[#D40000] uppercase tracking-widest">MARANELLO</p>
+        <h3 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">F80 HYPERCAR</h3>
+        <p class="font-label-mono-sm text-label-mono-sm text-outline mt-1 font-mono">1,184 HP // 3.0L V6 HYBRID F1 TECH</p>
+      </div>
+    </a>
+
+    <!-- Lamborghini Panel -->
+    <a class="relative group block overflow-hidden h-[380px] md:h-full" href="#lamborghini">
+      <img
+        alt="Lamborghini Revuelto on Alpine pass"
+        class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4hpF7jhi77qMO5TJvBDj-U9STZ35xia4g_QQJ50zI_g2tDCchC89OkytnGuXwPF_H1Ud6b6g9wQaioxEtnkEtL3lOXAunyyZLce-diYYyeDhNOAe8HAkuhmpx3QPeliIhFz2dyQGCTzEPf3hJ0naXIT-hZBnTCv4zlvvSp2WvyJD_xgvQnI9bfSD09BcYHgrP8SUIeqih-fczv0OcV-pbZxoapUiGcO5lnXKrsG5Feaq3pksfoCP2xM9GgKfaTSzwFHl7PSgP05jhhg"
+      />
+      <div class="absolute inset-0 bg-[#C7D500]/10 mix-blend-color pointer-events-none"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+      <div class="absolute top-4 left-4 z-10">
+        <Badge variant="lamborghini" className="px-2 py-1">
+          03 // LAMBORGHINI
+        </Badge>
+      </div>
+      <div class="absolute bottom-6 left-6 right-6 z-10">
+        <p class="font-label-mono-sm text-label-mono-sm text-[#C7D500] uppercase tracking-widest">SANT'AGATA BOLOGNESE</p>
+        <h3 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">REVUELTO</h3>
+        <p class="font-label-mono-sm text-label-mono-sm text-outline mt-1 font-mono">1,015 PS // 6.5L V12 PHEV</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Editorial Title Deck -->
+  <div class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin py-10 lg:py-16">
+    <div class="border-l-2 border-primary pl-4 md:pl-6">
+      <p class="font-label-mono-md text-label-mono-md text-outline uppercase tracking-widest mb-2">
+        Comparative Automotive Analysis // Dossier 408
+      </p>
+      <h1 class="font-headline-xl text-headline-xl uppercase text-primary tracking-tight leading-[0.95]">
+        THREE PHILOSOPHIES OF SPEED
+      </h1>
+      <p class="font-body-lead text-body-lead text-on-surface-variant max-w-3xl mt-4">
+        How Stuttgart, Maranello and Sant'Agata Bolognese built their legends.
+      </p>
+    </div>
+  </div>
+</section>

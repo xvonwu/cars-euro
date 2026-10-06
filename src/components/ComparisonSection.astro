@@ -1,0 +1,219 @@
+---
+import { Button } from "@/components/ui/button";
+import { Progress } from "@/components/ui/progress";
+---
+
+<!-- COMPARISON STRIP -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+  <div class="w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+    <!-- Strip Title -->
+    <div class="border-b border-outline-variant pb-4 mb-space-lg flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 bg-primary"></span>
+          <span class="font-label-mono-sm text-label-mono-sm uppercase text-outline tracking-wider">
+            HEAD-TO-HEAD BENCHMARK MATRIX
+          </span>
+        </div>
+        <h2 class="font-headline-lg text-headline-lg uppercase text-primary tracking-tight">
+          FLAGSHIP TELEMETRY COMPARISON
+        </h2>
+      </div>
+      <div class="font-label-mono-sm text-label-mono-sm text-outline">
+        UNITS: PS / HP // SECONDS (0-100 KM/H) // KM/H TOP SPEED
+      </div>
+    </div>
+
+    <!-- Comparative Spec Matrix -->
+    <div class="w-full border border-outline-variant bg-surface">
+      <!-- Header Row with Car Thumbnails -->
+      <div class="grid grid-cols-1 md:grid-cols-4 border-b border-outline-variant">
+        <div class="p-4 md:p-6 bg-surface-container-low border-b md:border-b-0 md:border-r border-outline-variant flex flex-col justify-end">
+          <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider block">
+            COMPARATIVE LEDGER
+          </span>
+          <span class="font-headline-sm text-headline-sm text-primary uppercase">
+            FLAGSHIP VEHICLES
+          </span>
+        </div>
+
+        <!-- Porsche Header Column -->
+        <div class="p-4 md:p-6 border-b md:border-b-0 md:border-r border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <div class="h-28 overflow-hidden mb-3 border border-outline-variant bg-surface-container-lowest">
+            <img
+              alt="Porsche 911 Turbo S track profile"
+              class="w-full h-full object-cover grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi3Qe0Z-6fxmnPD0FdVZRJ9c8d8zN8TxRPSxCgpYecanG-dvgkt5mGr1h7AyPyZmVONfPV_XfAzU_a1YvcJMRlBKtZlX0XB5JCwND4-tP7YeaoA4FKEZvyv6V8NBzvnA0W0MMeuJUdMHJFIRVa2jG4k9Q701qdI3LmfuPA_Rg-DXKltnFy95fki0uAnvlPNLwD7X-x34RlCLGvJa_hhaFe3FQH62AA7PGPUy5Se2ktkhAbdqYmVdxd"
+            />
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#B8BCC2]"></span>
+            <h3 class="font-headline-sm text-headline-sm uppercase text-primary">PORSCHE 911 TURBO S</h3>
+          </div>
+          <span class="font-label-mono-sm text-label-mono-sm text-[#B8BCC2] uppercase mt-1 block">
+            Zuffenhausen // 3.6L Twin-Turbo Flat-6
+          </span>
+        </div>
+
+        <!-- Ferrari Header Column -->
+        <div class="p-4 md:p-6 border-b md:border-b-0 md:border-r border-outline-variant bg-surface hover:bg-surface-container-low transition-colors">
+          <div class="h-28 overflow-hidden mb-3 border border-outline-variant bg-surface-container-lowest">
+            <img
+              alt="Ferrari F80 hypercar profile"
+              class="w-full h-full object-cover grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVRJa-iCSeCpQGoCXp0g4-9G9j7iddxOv2wvPobwGPn_0my4kUoheT_TSK57XggpXGfVos2H-QNp38qxX-skPalV4K07MMz6gXnNYd6S5P8Bze4Rqh5wacX5TWqBLvgcgaO06SqkkATO5-NWCFB0f7whgUK70iOxYmnwnwrGA1v44ztGLLSj7b_jRAbBXZyD5JDjvdBrbyTTJX5ejFFDRtB50dfD3Yous2lFMXd_wP5ypWCP6wrvb6"
+            />
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#D40000]"></span>
+            <h3 class="font-headline-sm text-headline-sm uppercase text-primary">FERRARI F80</h3>
+          </div>
+          <span class="font-label-mono-sm text-label-mono-sm text-[#D40000] uppercase mt-1 block">
+            Maranello // 3.0L V6 Hybrid F1-Derived
+          </span>
+        </div>
+
+        <!-- Lamborghini Header Column -->
+        <div class="p-4 md:p-6 bg-surface hover:bg-surface-container-low transition-colors">
+          <div class="h-28 overflow-hidden mb-3 border border-outline-variant bg-surface-container-lowest">
+            <img
+              alt="Lamborghini Revuelto Alpine profile"
+              class="w-full h-full object-cover grayscale contrast-125"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqIxAXVWMgriXPNa1lbAGwnQdMi2qZTk2sPrRgElDAye22kLq6kq44lJ1El_byepgbH4B6sk8kx790Oa7yB_iGFu49lANdtTrrfJbDMAHajSF63Qs-YKZxDrN0UbJwSllpEE4Bc7WRLsI9F57AqtAe91EvL9TA-G_aD7uRDIo8B6EmytQ-YFBNyJYuNBEC7ou1ypiA0jx_r0W9YIZ8he4M996ojpp8L1Vt2_KFd2g8r0WYHbed_VBP"
+            />
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-[#C7D500]"></span>
+            <h3 class="font-headline-sm text-headline-sm uppercase text-primary">LAMBORGHINI REVUELTO</h3>
+          </div>
+          <span class="font-label-mono-sm text-label-mono-sm text-[#C7D500] uppercase mt-1 block">
+            Sant'Agata // 6.5L V12 Naturally Aspirated PHEV
+          </span>
+        </div>
+      </div>
+
+      <!-- Metric 1: Power Output -->
+      <div class="grid grid-cols-1 md:grid-cols-4 border-b border-outline-variant py-4 px-4 md:px-6 items-center bg-surface-container-lowest">
+        <div class="mb-2 md:mb-0">
+          <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider block">METRIC 01</span>
+          <span class="font-body-sm font-semibold text-primary">POWER OUTPUT</span>
+        </div>
+        <!-- Porsche Power -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">PORSCHE</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">711 PS</span>
+          </div>
+          <Progress value={60} indicatorClassName="bg-[#B8BCC2]" />
+        </div>
+        <!-- Ferrari Power -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">FERRARI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">1,184 HP</span>
+          </div>
+          <Progress value={100} indicatorClassName="bg-[#D40000]" />
+        </div>
+        <!-- Lamborghini Power -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">LAMBORGHINI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">1,015 PS</span>
+          </div>
+          <Progress value={85} indicatorClassName="bg-[#C7D500]" />
+        </div>
+      </div>
+
+      <!-- Metric 2: 0-100 km/h Acceleration -->
+      <div class="grid grid-cols-1 md:grid-cols-4 border-b border-outline-variant py-4 px-4 md:px-6 items-center bg-surface">
+        <div class="mb-2 md:mb-0">
+          <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider block">METRIC 02</span>
+          <span class="font-body-sm font-semibold text-primary">0-100 KM/H SPRINT</span>
+        </div>
+        <!-- Porsche Acceleration -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">PORSCHE</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">2.50 s</span>
+          </div>
+          <Progress value={86} indicatorClassName="bg-[#B8BCC2]" />
+        </div>
+        <!-- Ferrari Acceleration -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">FERRARI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">2.15 s</span>
+          </div>
+          <Progress value={100} indicatorClassName="bg-[#D40000]" />
+        </div>
+        <!-- Lamborghini Acceleration -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">LAMBORGHINI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">2.50 s</span>
+          </div>
+          <Progress value={86} indicatorClassName="bg-[#C7D500]" />
+        </div>
+      </div>
+
+      <!-- Metric 3: Top Speed -->
+      <div class="grid grid-cols-1 md:grid-cols-4 py-4 px-4 md:px-6 items-center bg-surface-container-lowest">
+        <div class="mb-2 md:mb-0">
+          <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase tracking-wider block">METRIC 03</span>
+          <span class="font-body-sm font-semibold text-primary">MAXIMUM VELOCITY</span>
+        </div>
+        <!-- Porsche Top Speed -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">PORSCHE</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">322 km/h</span>
+          </div>
+          <Progress value={92} indicatorClassName="bg-[#B8BCC2]" />
+        </div>
+        <!-- Ferrari Top Speed -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">FERRARI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">350 km/h</span>
+          </div>
+          <Progress value={100} indicatorClassName="bg-[#D40000]" />
+        </div>
+        <!-- Lamborghini Top Speed -->
+        <div class="md:px-4 py-1">
+          <div class="flex justify-between items-baseline mb-1">
+            <span class="font-label-mono-sm text-label-mono-sm text-outline">LAMBORGHINI</span>
+            <span class="font-label-mono-md text-label-mono-md font-mono text-primary font-bold">350+ km/h</span>
+          </div>
+          <Progress value={100} indicatorClassName="bg-[#C7D500]" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Concluding Note Ledger -->
+    <div class="mt-space-lg p-6 border border-outline-variant bg-surface flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <span class="font-label-mono-sm text-label-mono-sm text-outline uppercase block">EDITORIAL VERDICT</span>
+        <p class="font-body-sm text-body-sm text-secondary mt-1">
+          Three distinct paths to hyper-performance: Stuttgart engineers usable everyday precision, Maranello refines relentless Formula 1 hybrid aggression, and Sant'Agata preserves theatrical naturally-aspirated drama.
+        </p>
+      </div>
+      <div class="shrink-0 flex items-center gap-3">
+        <a href="#porsche">
+          <Button variant="outline" size="sm" className="text-[#B8BCC2] border-outline-variant hover:border-[#B8BCC2] hover:bg-surface-container">
+            PORSCHE
+          </Button>
+        </a>
+        <a href="#ferrari">
+          <Button variant="outline" size="sm" className="text-[#D40000] border-outline-variant hover:border-[#D40000] hover:bg-surface-container">
+            FERRARI
+          </Button>
+        </a>
+        <a href="#lamborghini">
+          <Button variant="outline" size="sm" className="text-[#C7D500] border-outline-variant hover:border-[#C7D500] hover:bg-surface-container">
+            LAMBORGHINI
+          </Button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

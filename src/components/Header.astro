@@ -1,0 +1,49 @@
+---
+import { UserNav } from "@/components/UserNav";
+---
+
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-sm border-b border-outline-variant">
+  <div class="h-16 w-full max-w-[1600px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between">
+    <!-- Brand Title -->
+    <div class="flex items-center gap-space-lg">
+      <a class="flex items-baseline gap-space-sm group" data-path="archive-index" href="#">
+        <span class="font-headline-lg text-headline-lg tracking-tight uppercase text-primary leading-none group-hover:text-primary/90 transition-colors">
+          MARQUE
+        </span>
+        <span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase tracking-widest pl-space-xs border-l border-outline-variant">
+          VOL. IV // ISS. 02
+        </span>
+      </a>
+    </div>
+
+    <!-- Navigation & Action -->
+    <div class="flex items-center gap-space-xl">
+      <nav class="flex items-center gap-space-lg" data-active-classes="text-primary border-b border-primary font-medium">
+        <a
+          class="font-label-mono-md text-label-mono-md text-on-surface-variant uppercase tracking-wider py-1 border-b border-transparent hover:text-on-surface hover:border-outline transition-colors"
+          data-path="porsche-archive"
+          href="#porsche"
+        >
+          PORSCHE
+        </a>
+        <a
+          class="font-label-mono-md text-label-mono-md text-on-surface-variant uppercase tracking-wider py-1 border-b border-transparent hover:text-on-surface hover:border-outline transition-colors"
+          data-path="ferrari-archive"
+          href="#ferrari"
+        >
+          FERRARI
+        </a>
+        <a
+          class="font-label-mono-md text-label-mono-md text-on-surface-variant uppercase tracking-wider py-1 border-b border-transparent hover:text-on-surface hover:border-outline transition-colors"
+          data-path="lamborghini-archive"
+          href="#lamborghini"
+        >
+          LAMBORGHINI
+        </a>
+      </nav>
+
+      <!-- Profile Avatar using shadcn UserNav -->
+      <UserNav client:idle />
+    </div>
+  </div>
+</header>
